@@ -3,7 +3,9 @@ This binary allows for nodeos to run on a Raspberry Pi 4 with Ubunutu 18.04 oper
 Additionally, the user should consider using the following options in their config.ini file. The first (database-map-mode=heap) is to extend the longivity of the external storage. Using this option should decrease the number of writes to the SD card. The second option (wasm-runtime=wabt) is default on eosio 2.0.x, but it's a good idea to strictly state it, because currently EOS VM will not run on ARM8.
 
 database-map-mode=heap
+
 and
+
 wasm-runtime=wabt
 
 The following debian package was the result of compiling eosio code from source from https://developers.eos.io/manuals/eos/latest/install/build-from-source/index .
